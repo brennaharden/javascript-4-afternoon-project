@@ -128,7 +128,7 @@ function Employee(name, email, hireDate) {
   User.prototype.removeSavedPost = function(num){
     for(i = this.savedPosts.length - 1; i > 0; i--){
       if(this.savedPosts[i].id === num){
-        this.savedPosts.splice([i], 1)
+        this.savedPosts.splice(i, 1)
       }
     }
   }
